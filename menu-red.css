@@ -51,6 +51,7 @@
 }
 .nav-red li a:hover {
   font-weight: bold;
+  color: var(--red)
 }
 
 .nav-red li {
@@ -68,7 +69,7 @@
   z-index: 1;
   width: 0;
   height: 0;
-  margin: 30px 0 20px 20px;
+  margin: 0 0 0 20px;
   background-color: black;
   background: circle;
   border-radius: 50%;
@@ -85,6 +86,18 @@
   transform: translate(-25%, -25%);
 }
 
+.change-red .bar-red  {
+  /* color: var(--red) */
+  background-color: var(--red);
+ 
+}
+
+.change-nav-title-red {
+  color: var(--red);
+}
+.change .what-is-it {
+  color: red;
+}
 .change-red #bar1-red {
   transform: translateY(10px) rotatez(180deg);
 }
