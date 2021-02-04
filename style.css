@@ -1,5 +1,6 @@
 :root {
   --red: #D34848;
+  --yellow: #FFB33F;
 }
 * {
   padding: 0;
@@ -183,7 +184,7 @@ nav a.prev {
   width: 100%
 }
 .yellow-box {
-  background-color: #FFB33F;
+  background-color: var(--yellow);
   height: 600px;
   width: 100%
 }
