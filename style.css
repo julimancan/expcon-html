@@ -1,6 +1,8 @@
 :root {
   --red: #D34848;
   --yellow: #FFB33F;
+  --black: black;
+  --cyan: #1FE1E9;
 }
 * {
   padding: 0;
@@ -190,12 +192,12 @@ nav a.prev {
 }
 
 .black-box {
-  background-color: black;
+  background-color: var(--black);
   height: 600px;
   width: 100%;
 }
 .skyblue-box {
-  background-color: #1FE1E9;
+  background-color: var(--cyan);
   height: 400px;
   width: 100%;
 }

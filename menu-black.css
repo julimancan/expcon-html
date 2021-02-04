@@ -1,16 +1,16 @@
-#menu-yellow {
+#menu-black {
   width: 35px;
   height: 30px;
   margin: 30px 0 20px 20px;
   cursor: pointer;
   position: absolute;
-  top: 1230px!important;
+  top: 1830px!important;
   left: 0!important;
   z-index: 1;
 }
 
 
-.bar-yellow {
+.bar-black {
   height: 2.5px;
   width: 100%;
   background-color: white;
@@ -18,93 +18,94 @@
   transition: 0.3s ease;
 }
 
-#bar1-yellow {
+#bar1-black {
   transform: translateY(-8px);
 }
 
-#bar3-yellow {
+#bar3-black {
   transform: translateY(8px);
 }
-.nav-title-yellow {
+.nav-title-black {
   color: white;
   position: absolute;
   left: 65px;
-  top: 1245px;
+  top: 1845px;
   z-index: 1
 }
 
-.nav-yellow {
+.nav-black {
 
   /* background-color: violet; */
   margin: 30px 0 20px 20px;
   cursor: pointer;
   position: absolute;
-  top: 1260px!important;
+  top: 1860px!important;
   left: 0px!important;
   z-index: 1;
   transition: 0.5s ease;
   display: none;
 }
-.nav-yellow li a {
+.nav-black li a {
   color: white;
   text-decoration: none;
 }
-.nav-yellow li a:hover {
+.nav-black li a:hover {
   font-weight: bold;
-  color: var(--yellow)
+  color: var(--black)
 }
 
-.nav-yellow li {
+.nav-black li {
   list-style: none;
   padding: 5px 0;
 }
 
-.menu-bg-yellow, #menu-bar-yellow{
-  top: 1200px;
+.menu-bg-black, #menu-bar-black{
+  top: 1800px;
   left: 0;
   /* position: absolute; */
 }
 
-.menu-bg-yellow {
-  z-index: 1;
+.menu-bg-black {
+  position: absolute;
+  z-index: 0;
   width: 0;
   height: 0;
   margin: 0 0 0 20px;
-  background-color: black;
+  background-color: var(--cyan);
   background: circle;
   border-radius: 50%;
   transition: 0.3s ease;
 }
 
-#menu-bar-yellow {
+#menu-bar-black {
   z-index: 2;
 }
 
-.change-bg-yellow {
+.change-bg-black {
   width: 300px;
   height: 300px;
   transform: translate(-25%, -25%);
 }
 
-.change-yellow .bar-yellow  {
-  /* color: var(--yellow) */
-  background-color: var(--yellow);
+.change-black .bar-black  {
+  /* color: var(--black) */
+  /* background-color: var(--black); */
  
 }
 
-.change-nav-title-yellow {
-  color: var(--yellow);
+.change-nav-title-black {
+  /* color: var(--black); */
 }
 
-.change-yellow #bar1-yellow {
+.change-black #bar1-black {
   transform: translateY(10px) rotatez(180deg);
 }
-.change-yellow #bar2-yellow {
+.change-black #bar2-black {
   transform: rotatez(180deg);
 }
-.change-yellow #bar3-yellow {
+.change-black #bar3-black {
   transform: translateY(-10px) rotatez(180deg);
 }
-.change-yellow {
+.change-black {
   display: block;
 }

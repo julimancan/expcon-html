@@ -22,3 +22,12 @@ const onClickMenuYellow = () => {
   document.getElementById("bar3-yellow").classList.toggle("change-yellow");
   document.getElementById("nav-title-yellow").classList.toggle("change-nav-title-yellow");
 }
+const onClickMenuBlack = () => {
+  document.getElementById("menu-black").classList.toggle("change-black");
+  document.getElementById("nav-black").classList.toggle("change-black");
+  document.getElementById("menu-bg-black").classList.toggle("change-bg-black");
+  document.getElementById("bar1-black").classList.toggle("change-black");
+  document.getElementById("bar2-black").classList.toggle("change-black");
+  document.getElementById("bar3-black").classList.toggle("change-black");
+  document.getElementById("nav-title-black").classList.toggle("change-nav-title-black");
+}
