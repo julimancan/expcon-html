@@ -1,0 +1,22 @@
+{
+  "name": "expcon-html",
+  "version": "1.0.0",
+  "description": "Steer Challenge",
+  "main": "sass/mystyles.scss",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julimancan/expcon-html.git"
+  },
+  "author": "Julian Bustos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julimancan/expcon-html/issues"
+  },
+  "homepage": "https://github.com/julimancan/expcon-html#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

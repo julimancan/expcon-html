@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <!-- slider -->
-<div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  </head>
+  <body>
+    <!-- slider -->
+    <header>
+      <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+      <div class="hero-text">
+        <h1 class="title">INTERACTIVE CONCERT EXPERIENCE</h1>
+        <p class="subtitle">
+          experience your favourite artists like never before and from the
+          comfort of your own home.
+        </p>
+        <button class="button">Button</button>
+      </div>
+    </header>
+    <!-- slider nav -->
+    <nav>
+      <!-- <a href="#" class="main-nav prev" data-nav="previous"> <img src="./img/white-button.png"> <span></span></a> -->
+      <a href="#" class="main-nav next" data-nav="next">
+        <i class="fas fa-circle"></i><span></span
+      ></a>
+      <a href="#" class="main-nav prev" data-nav="previous">
+        <i class="fas fa-circle"></i><span></span
+      ></a>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
+    <script src="./headerSlider.js"></script>
 
-<!-- slider nav -->
-<nav>
-    <a href="#" class="main-nav prev" data-nav="previous">Prev <span></span></a>
-    <a href="#" class="main-nav next" data-nav="next">Next <span></span></a>
-</nav>
-<script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
-<script src="./app.js"></script>
-</body>
+    <div class="red-box"></div>
+    <div class="yellow-box"></div>
+    <div class="black-box"></div>
+    <div class="skyblue-box"></div>
+    <div class="trynow-box"></div>
+  </body>
+
+  <footer></footer>
 </html>
