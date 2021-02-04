@@ -9,13 +9,21 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"> -->
   </head>
   <body>
     <!-- slider -->
     <header>
+      <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+      </div>
       <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
-      <div class="hero-text">
+      <div class="slider-container">
         <h1 class="title">INTERACTIVE CONCERT EXPERIENCE</h1>
         <p class="subtitle">
           experience your favourite artists like never before and from the
@@ -40,6 +48,7 @@
     <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
     <script src="./headerSlider.js"></script>
+    <script src="./hamburgerMenu.js"></script>
 
     <div class="red-box"></div>
     <div class="yellow-box"></div>
