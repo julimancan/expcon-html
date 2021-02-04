@@ -1,7 +1,22 @@
+:root {
+  --red: #D34848;
+  --yellow: #FFB33F;
+  --black: black;
+  --cyan: #1FE1E9;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: brown;
+}
+
+body { 
+  font-family: "PT Sans", sans-serif;
+  background-color: white;
 }
 
 header {
@@ -9,12 +24,112 @@ header {
   align-items: center;
   justify-content: center;
 }
+
+#menu {
+  width: 35px;
+  height: 30px;
+  margin: 30px 0 20px 20px;
+  /* cursor: pointer; */
+  position: absolute;
+  top: 0!important;
+  left: 0!important;
+  z-index: 1;
+}
+
+.bar {
+  height: 2.5px;
+  width: 100%;
+  background-color: white;
+  display: block;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-8px);
+}
+
+#bar3 {
+  transform: translateY(8px);
+}
+
+.nav-title {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  left: 65px;
+  top: 15px
+}
+.nav {
+
+  /* background-color: violet; */
+  margin: 30px 0 20px 20px;
+  /* cursor: pointer; */
+  position: absolute;
+  top: 30px!important;
+  left: 0px!important;
+  z-index: 1;
+  transition: 0.5s ease;
+  display: none;
+}
+.nav li a {
+  color: white;
+  text-decoration: none;
+}
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.nav li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+.menu-bg, #menu-bar{
+  top:0;
+  left: 0;
+  position: absolute;
+}
+
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background-color: none;
+  background: radial-gradient(circle, purple, black);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+#menu-bar {
+  z-index: 2;
+}
+
+.change-bg {
+  width: 300px;
+  height: 300px;
+  transform: translate(-25%, -25%);
+}
+
+.change #bar1 {
+  transform: translateY(10px) rotatez(180deg);
+}
+.change #bar2 {
+  transform: rotatez(180deg);
+}
+.change #bar3 {
+  transform: translateY(-10px) rotatez(180deg);
+}
+.change {
+  display: block;
+}
+
 .rgbKineticSlider {
   display: block;
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 600px;
+  height: 630px;
 }
 
 .rgbKineticSlider canvas {
@@ -28,11 +143,11 @@ header {
 .title {
   color: white;
 }
-.hero-text {
+.slider-container {
   color: white;
   font-weight: larger;
   /* margin-top: -100px; */
-  z-index: 1;
+  z-index: 14;
   top: 250px;
   position: absolute;
   display: flex;
@@ -66,30 +181,40 @@ nav a.prev {
 }
 
 .red-box {
-  background-color: #D34848;
+  background-color: var(--red);
   height: 600px;
-  width: 100%
+  width: 100%;
+  position: relative;
+  z-index: 11;
 }
 .yellow-box {
-  background-color: #FFB33F;
+  background-color: var(--yellow);
   height: 600px;
-  width: 100%
+  width: 100%;
+  position: relative;
+  z-index: 8;
 }
 
 .black-box {
-  background-color: black;
+  background-color: var(--black);
   height: 600px;
   width: 100%;
+  position: relative;
+  z-index: 5;
 }
 .skyblue-box {
-  background-color: #1FE1E9;
+  background-color: var(--cyan);
   height: 400px;
   width: 100%;
+  /* position: relative;
+  z-index: -2; */
 }
 .trynow-box {
-  background-color: black;
+  background-color: var(--black);
   height: 400px;
   width: 100%;
+  /* position: unset;
+  z-index: -2; */
 }
 
 footer {

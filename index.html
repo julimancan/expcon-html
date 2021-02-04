@@ -3,19 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>EXP|CON</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./menu-red.css" />
+    <link rel="stylesheet" href="./menu-yellow.css" />
+    <link rel="stylesheet" href="./menu-black.css" />
+    <link rel="stylesheet" href="./menu-skyblue.css" />
+    <link rel="stylesheet" href="./menu-black2.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"> -->
   </head>
   <body>
     <!-- slider -->
     <header>
+      <div id="menu-bar" onclick="">
+        <h1 class="nav-title">EXP|CON</h1>
+        <div id="menu">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="menu-bg" id="menu-bg"></div>
       <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
-      <div class="hero-text">
+      <div class="slider-container">
         <h1 class="title">INTERACTIVE CONCERT EXPERIENCE</h1>
         <p class="subtitle">
           experience your favourite artists like never before and from the
@@ -40,12 +60,88 @@
     <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
     <script src="./headerSlider.js"></script>
+    <script src="./hamburgerMenu.js"></script>
 
-    <div class="red-box"></div>
-    <div class="yellow-box"></div>
+    <div class="red-box">
+      <div id="menu-bar-red">
+        <h1 class="nav-title-red" id="nav-title-red">EXP|CON</h1>
+        <div id="menu-red" onclick="onClickMenuRed()">
+          <div id="bar1-red" class="bar-red"></div>
+          <div id="bar2-red" class="bar-red"></div>
+          <div id="bar3-red" class="bar-red"></div>
+        </div>
+        <ul class="nav-red" id="nav-red">
+          <li><a href="#">WHAT IS IT</a></li>
+          <li><a href="#">PERKS</a></li>
+          <li><a href="#">PRICING</a></li>
+        </ul>
+      </div>
+      <div class="menu-bg-red" id="menu-bg-red"></div>
+    </div>
+    <div class="yellow-box">
+      <div id="menu-bar-yellow">
+        <h1 class="nav-title-yellow" id="nav-title-yellow">EXP|CON</h1>
+        <div id="menu-yellow" onclick="onClickMenuYellow()">
+          <div id="bar1-yellow" class="bar-yellow"></div>
+          <div id="bar2-yellow" class="bar-yellow"></div>
+          <div id="bar3-yellow" class="bar-yellow"></div>
+        </div>
+        <ul class="nav-yellow" id="nav-yellow">
+          <li><a href="#">WHAT IS IT</a></li>
+          <li><a href="#">PERKS</a></li>
+          <li><a href="#">PRICING</a></li>
+        </ul>
+      </div>
+      <div class="menu-bg-yellow" id="menu-bg-yellow"></div>
+    </div>
     <div class="black-box"></div>
-    <div class="skyblue-box"></div>
-    <div class="trynow-box"></div>
+    <div id="menu-bar-black">
+      <h1 class="nav-title-black" id="nav-title-black">EXP|CON</h1>
+      <div id="menu-black" onclick="onClickMenuBlack()">
+        <div id="bar1-black" class="bar-black"></div>
+        <div id="bar2-black" class="bar-black"></div>
+        <div id="bar3-black" class="bar-black"></div>
+      </div>
+      <ul class="nav-black" id="nav-black">
+        <li><a href="#">WHAT IS IT</a></li>
+        <li><a href="#">PERKS</a></li>
+        <li><a href="#">PRICING</a></li>
+      </ul>
+    </div>
+    <div class="menu-bg-black" id="menu-bg-black"></div>
+  </div>
+    <div class="skyblue-box">
+      <div id="menu-bar-skyblue">
+        <h1 class="nav-title-skyblue" id="nav-title-skyblue">EXP|CON</h1>
+        <div id="menu-skyblue" onclick="onClickMenuSkyblue()">
+          <div id="bar1-skyblue" class="bar-skyblue"></div>
+          <div id="bar2-skyblue" class="bar-skyblue"></div>
+          <div id="bar3-skyblue" class="bar-skyblue"></div>
+        </div>
+        <ul class="nav-skyblue" id="nav-skyblue">
+          <li><a href="#">WHAT IS IT</a></li>
+          <li><a href="#">PERKS</a></li>
+          <li><a href="#">PRICING</a></li>
+        </ul>
+      </div>
+      <div class="menu-bg-skyblue" id="menu-bg-skyblue"></div>
+    </div>
+    <div class="trynow-box">
+      <div id="menu-bar-black2">
+        <h1 class="nav-title-black2" id="nav-title-black2">EXP|CON</h1>
+        <div id="menu-black2" onclick="onClickMenuBlack2()">
+          <div id="bar1-black2" class="bar-black2"></div>
+          <div id="bar2-black2" class="bar-black2"></div>
+          <div id="bar3-black2" class="bar-black2"></div>
+        </div>
+        <ul class="nav-black2" id="nav-black2">
+          <li><a href="#">WHAT IS IT</a></li>
+          <li><a href="#">PERKS</a></li>
+          <li><a href="#">PRICING</a></li>
+        </ul>
+      </div>
+      <div class="menu-bg-black2" id="menu-bg-black2"></div>
+    </div>
   </body>
 
   <footer></footer>
