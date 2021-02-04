@@ -1,16 +1,16 @@
-#menu-yellow {
+#menu-skyblue {
   width: 35px;
   height: 30px;
   margin: 30px 0 20px 20px;
   cursor: pointer;
   position: absolute;
-  top: 0!important;
+  top: 2430px!important;
   left: 0!important;
-  z-index: 10;
+  z-index: 1;
 }
 
 
-.bar-yellow {
+.bar-skyblue {
   height: 2.5px;
   width: 100%;
   background-color: white;
@@ -18,94 +18,93 @@
   transition: 0.3s ease;
 }
 
-#bar1-yellow {
+#bar1-skyblue {
   transform: translateY(-8px);
 }
 
-#bar3-yellow {
+#bar3-skyblue {
   transform: translateY(8px);
 }
-.nav-title-yellow {
+.nav-title-skyblue {
   color: white;
   position: absolute;
   left: 65px;
-  top: 15px;
-  z-index: 10;
+  top: 2445px;
+  z-index: 1
 }
 
-.nav-yellow {
+.nav-skyblue {
 
   /* background-color: violet; */
   margin: 30px 0 20px 20px;
   cursor: pointer;
   position: absolute;
-  top: 50px!important;
+  top: 2460px!important;
   left: 0px!important;
-  z-index: 10;
+  z-index: 1;
   transition: 0.5s ease;
   display: none;
 }
-.nav-yellow li a {
+.nav-skyblue li a {
   color: white;
   text-decoration: none;
 }
-.nav-yellow li a:hover {
+.nav-skyblue li a:hover {
   font-weight: bold;
-  color: var(--yellow)
+  color: var(--cyan)
 }
 
-.nav-yellow li {
+.nav-skyblue li {
   list-style: none;
   padding: 5px 0;
 }
 
-.menu-bg-yellow, #menu-bar-yellow{
-  /* top: 1200px; */
+.menu-bg-skyblue, #menu-bar-skyblue{
+  top: 2400px;
   left: 0;
   /* position: absolute; */
 }
 
-.menu-bg-yellow {
-  position: absolute;
-  z-index: 9;
+.menu-bg-skyblue {
+  z-index: 1;
   width: 0;
   height: 0;
   margin: 0 0 0 20px;
-  background-color: var(--black);
-  /* background: circle; */
+  background-color: black;
+  background: circle;
   border-radius: 50%;
   transition: 0.3s ease;
 }
 
-#menu-bar-yellow {
-  z-index: 8;
+#menu-bar-skyblue {
+  z-index: 2;
 }
 
-.change-bg-yellow {
+.change-bg-skyblue {
   width: 300px;
   height: 300px;
   transform: translate(-25%, -25%);
 }
 
-.change-yellow .bar-yellow  {
-  /* color: var(--yellow) */
-  background-color: var(--yellow);
+.change-skyblue .bar-skyblue  {
+  /* color: var(--skyblue) */
+  background-color: var(--cyan);
  
 }
 
-.change-nav-title-yellow {
-  color: var(--yellow);
+.change-nav-title-skyblue {
+  color: var(--cyan);
 }
 
-.change-yellow #bar1-yellow {
+.change-skyblue #bar1-skyblue {
   transform: translateY(10px) rotatez(180deg);
 }
-.change-yellow #bar2-yellow {
+.change-skyblue #bar2-skyblue {
   transform: rotatez(180deg);
 }
-.change-yellow #bar3-yellow {
+.change-skyblue #bar3-skyblue {
   transform: translateY(-10px) rotatez(180deg);
 }
-.change-yellow {
+.change-skyblue {
   display: block;
 }

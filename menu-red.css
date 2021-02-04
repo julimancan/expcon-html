@@ -4,9 +4,9 @@
   margin: 30px 0 20px 20px;
   cursor: pointer;
   position: absolute;
-  top: 630px!important;
+  top: 0px!important;
   left: 0!important;
-  z-index: 1;
+  z-index: 13;
 }
 
 
@@ -29,8 +29,8 @@
   color: white;
   position: absolute;
   left: 65px;
-  top: 645px;
-  z-index: 1
+  top: 15px;
+  z-index: 13;
 }
 
 .nav-red {
@@ -39,9 +39,9 @@
   margin: 30px 0 20px 20px;
   cursor: pointer;
   position: absolute;
-  top: 660px!important;
+  top: 50px!important;
   left: 0px!important;
-  z-index: 1;
+  z-index: 13;
   transition: 0.5s ease;
   display: none;
 }
@@ -60,13 +60,14 @@
 }
 
 .menu-bg-red, #menu-bar-red{
-  top: 600;
+  /* top: 600; */
   left: 0;
   /* position: absolute; */
 }
 
 .menu-bg-red {
-  z-index: 1;
+  position: unset;
+  z-index: 12;
   width: 0;
   height: 0;
   margin: 0 0 0 20px;
@@ -77,7 +78,7 @@
 }
 
 #menu-bar-red {
-  z-index: 2;
+  z-index: 11;
 }
 
 .change-bg-red {

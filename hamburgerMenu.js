@@ -31,3 +31,21 @@ const onClickMenuBlack = () => {
   document.getElementById("bar3-black").classList.toggle("change-black");
   document.getElementById("nav-title-black").classList.toggle("change-nav-title-black");
 }
+const onClickMenuBlack2 = () => {
+  document.getElementById("menu-black2").classList.toggle("change-black2");
+  document.getElementById("nav-black2").classList.toggle("change-black2");
+  document.getElementById("menu-bg-black2").classList.toggle("change-bg-black2");
+  document.getElementById("bar1-black2").classList.toggle("change-black2");
+  document.getElementById("bar2-black2").classList.toggle("change-black2");
+  document.getElementById("bar3-black2").classList.toggle("change-black2");
+  document.getElementById("nav-title-black2").classList.toggle("change-nav-title-black2");
+}
+const onClickMenuSkyblue = () => {
+  document.getElementById("menu-skyblue").classList.toggle("change-skyblue");
+  document.getElementById("nav-skyblue").classList.toggle("change-skyblue");
+  document.getElementById("menu-bg-skyblue").classList.toggle("change-bg-skyblue");
+  document.getElementById("bar1-skyblue").classList.toggle("change-skyblue");
+  document.getElementById("bar2-skyblue").classList.toggle("change-skyblue");
+  document.getElementById("bar3-skyblue").classList.toggle("change-skyblue");
+  document.getElementById("nav-title-skyblue").classList.toggle("change-nav-title-skyblue");
+}

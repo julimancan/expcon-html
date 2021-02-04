@@ -16,7 +16,7 @@
 
 body { 
   font-family: "PT Sans", sans-serif;
-  background-color: black;
+  background-color: white;
 }
 
 header {
@@ -147,7 +147,7 @@ header {
   color: white;
   font-weight: larger;
   /* margin-top: -100px; */
-  z-index: 1;
+  z-index: 14;
   top: 250px;
   position: absolute;
   display: flex;
@@ -183,28 +183,38 @@ nav a.prev {
 .red-box {
   background-color: var(--red);
   height: 600px;
-  width: 100%
+  width: 100%;
+  position: relative;
+  z-index: 11;
 }
 .yellow-box {
   background-color: var(--yellow);
   height: 600px;
-  width: 100%
+  width: 100%;
+  position: relative;
+  z-index: 8;
 }
 
 .black-box {
   background-color: var(--black);
   height: 600px;
   width: 100%;
+  position: relative;
+  z-index: 5;
 }
 .skyblue-box {
   background-color: var(--cyan);
   height: 400px;
   width: 100%;
+  /* position: relative;
+  z-index: -2; */
 }
 .trynow-box {
-  background-color: black;
+  background-color: var(--black);
   height: 400px;
   width: 100%;
+  /* position: unset;
+  z-index: -2; */
 }
 
 footer {
