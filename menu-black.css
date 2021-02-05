@@ -51,7 +51,7 @@
 }
 .nav-black li a:hover {
   font-weight: bold;
-  color: var(--black)
+  color: var(--black);
 }
 
 .nav-black li {
