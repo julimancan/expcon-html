@@ -339,7 +339,7 @@ background-color: none;
 
 
 
-.top-right-button button {
+.top-right-button a {
   top: 0;
   right: 0;
   position: absolute;
@@ -378,6 +378,11 @@ background-color: none;
   position: absolute;
   top: 0%;
   right: 0%;
+  margin: 2em;
+  height: 50px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50px;
 }
 .black-box-content h1 {
   color: white;
@@ -407,12 +412,22 @@ background-color: none;
   color: var(--yellow);
 }
 
-.black-box-info section .line {
-  border-bottom: lightblue;
-  background-color: lightcoral;
+.black-box-info section div {
   height: 2px;
-  width: 25px;
+  width: 50px;
+  position: absolute;
+  top: 13em;
 
+}
+
+.line-black-content-left-side {
+  background-color: var(--red);
+}
+.line-black-content-center-side {
+  background-color: var(--cyan);
+}
+.line-black-content-right-side {
+  background-color: var(--yellow);
 }
 
 .black-box-info {
