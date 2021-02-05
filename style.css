@@ -3,15 +3,12 @@
   --yellow: #FFB33F;
   --black: black;
   --cyan: #1FE1E9;
+  --main-bg-color: brown;
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --main-bg-color: brown;
 }
 
 body { 
