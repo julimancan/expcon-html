@@ -311,7 +311,7 @@ background-color: none;
   left: 45%;
   top: 45%;
   /* border: 5px solid; */
-  z-index: 5;
+  z-index: -5;
 }
 .yellow-left-side {
   /* background-color: violet; */
