@@ -381,8 +381,8 @@ background-color: none;
   margin: 2em;
   height: 50px;
   width: 200px;
-  overflow: hidden;
   border-radius: 50px;
+  overflow: hidden;
   
 }
 .black-box-content h1 {
@@ -530,6 +530,26 @@ background-color: none;
   /* position: unset;
   z-index: -2; */
 }
+
+.trynow-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.right-side-trynow h1 {
+  color: var(--red);
+}
+.right-side-trynow p {
+  color: white;
+}
+.trynow-button {
+  height: 50px;
+  width: 200px;
+  border-radius: 50px;
+  overflow: hidden;
+  }
 
 footer {
   background-color: #5E33D1;
