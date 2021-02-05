@@ -141,7 +141,7 @@ header {
 }
 
 .title {
-  color: black;
+  color: var(--cyan);
 }
 .slider-container {
   color: white;
@@ -182,7 +182,7 @@ background-color: none;
 }
 
 .subtitle {
-  color: black;
+  color: var(--cyan);
   z-index: -1
 }
 
