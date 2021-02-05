@@ -383,6 +383,7 @@ background-color: none;
   width: 200px;
   overflow: hidden;
   border-radius: 50px;
+  
 }
 .black-box-content h1 {
   color: white;
@@ -443,16 +444,6 @@ background-color: none;
   flex-direction: column;
   width: 15%;
 }
-
-.red-left-side {
-
-}
-
-.cyan-center-side {
-}
-
-.black-box-info .yellow-text-right-side{
-}
  
 .skyblue-box {
   background-color: var(--cyan);
@@ -460,6 +451,77 @@ background-color: none;
   width: 100%;
   /* position: relative; */
   /* z-index: -2; */
+}
+
+.skyblue-content {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.left-side-skyblue {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%;
+  height: 100%;
+  margin-left: 10rem;
+}
+.left-side-skyblue .top-speaker{
+  -webkit-transform:rotate(95deg);
+  -moz-transform: rotate(95deg);
+  -ms-transform: rotate(95deg);
+  -o-transform: rotate(95deg);
+  transform: rotate(95deg);
+  width: 200px;
+  position: relative;
+  margin: 1rem 0 0 2rem ;
+}
+.left-side-skyblue .bottom-speaker{
+  -webkit-transform:rotate(84deg);
+  -moz-transform: rotate(84deg);
+  -ms-transform: rotate(84deg);
+  -o-transform: rotate(84deg);
+  transform: rotate(84deg);
+  width: 200px;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.right-side-skyblue{
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.right-side-skyblue h1{
+  color: white;
+  margin: 0 0 50px 50px;
+
+}
+.reviews {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.review {
+  width: 200px;
+}
+.stars {
+  display: flex;
+  justify-content:space-around;
+  width: 200px;
+  height: 30px;
+  
+}
+.review h2{
+  color: white;
 }
 .trynow-box {
   background-color: var(--black);
