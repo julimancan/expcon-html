@@ -6,10 +6,26 @@
   <title>Pricing</title>
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./pricing-styles.css" />
+  <link rel="stylesheet" href="./menu-black.css" />
+  <link rel="stylesheet" href="./menu-red-pricing.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
-
+  <script src="./hamburgerMenu.js"></script>
 </head>
 <body>
+  <div id="menu-bar-black">
+    <h1 class="nav-title-black" id="nav-title-black">EXP|CON</h1>
+    <div id="menu-black" onclick="onClickMenuBlack()">
+      <div id="bar1-black" class="bar-black"></div>
+      <div id="bar2-black" class="bar-black"></div>
+      <div id="bar3-black" class="bar-black"></div>
+    </div>
+    <ul class="nav-black" id="nav-black">
+      <li><a href="#">WHAT IS IT</a></li>
+      <li><a href="#">PERKS</a></li>
+      <li><a href="#">PRICING</a></li>
+    </ul>
+  </div>
+  <div class="menu-bg-black" id="menu-bg-black"></div>
   <div class="pricing-top">
     <div class="titles">
 
@@ -113,6 +129,20 @@
     </div>
   </div>
   <div class="pricing-bottom">
+    <div id="menu-bar-red">
+      <h1 class="nav-title-red" id="nav-title-red">EXP|CON</h1>
+      <div id="menu-red" onclick="onClickMenuRed()">
+        <div id="bar1-red" class="bar-red"></div>
+        <div id="bar2-red" class="bar-red"></div>
+        <div id="bar3-red" class="bar-red"></div>
+      </div>
+      <ul class="nav-red" id="nav-red">
+        <li><a href="#">WHAT IS IT</a></li>
+        <li><a href="#">PERKS</a></li>
+        <li><a href="#">PRICING</a></li>
+      </ul>
+    </div>
+    <div class="menu-bg-red" id="menu-bg-red"></div>
     <div class="pricing-bottom-content">
       <h1>PERKS</h1>
       <div class="perks-box-info">
