@@ -302,16 +302,16 @@ background-color: none;
   z-index: 16;
 }
 .mouse {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: url(./img/liveconcert2.jpg);
   background-attachment: fixed;
   position: absolute;
   left: 45%;
   top: 45%;
-  border: 5px solid;
-  z-index: 17;
+  /* border: 5px solid; */
+  z-index: 5;
 }
 .yellow-left-side {
   /* background-color: violet; */
