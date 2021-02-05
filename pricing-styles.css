@@ -97,3 +97,33 @@
   color: white;
   border: none;
 }
+
+.pricing-bottom {
+  background-color: var(--red);
+  color: white;
+
+}
+
+.pricing-bottom-content {
+  padding: 10em;
+}
+.perks-box-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+}
+
+.perks-line {
+  height: 2px;
+  width: 75px;
+  /* position: absolute; */
+  /* top: 13em; */
+  background-color: white;
+  z-index: 5;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.perks-box-info p{
+  color: black;
+}
