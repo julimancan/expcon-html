@@ -156,8 +156,7 @@ header {
   justify-content: center;
 }
 
-nav a {
-  color: black;
+.main-nav {
   text-decoration: none;
   position: absolute;
   top: 550px;
@@ -167,12 +166,19 @@ nav a {
   padding: 20px;
 }
 
-nav a.next {
+.main-nav.next {
   left: 49%;
+  text-decoration: none;
+  margin: 5px;
+}
+.main-nav.next.active {
+background-color: none;
 }
 
-nav a.prev {
+.main-nav.prev {
   right: 49%;
+  text-decoration: none;
+  margin: 5px;
 }
 
 .sliderTitle {
