@@ -285,6 +285,34 @@ background-color: none;
   padding-top: 3em;
   overflow: hidden;
 }
+
+.mouse_area_wrap {
+  width: 100%;
+  height: 120%;
+  position: relative;
+  overflow: hidden;
+  z-index: 16;
+}
+
+.mouse_hover_area {
+  width: 100%;
+  height: 120%;
+  /* background: url(./img/liveconcert2.jpg) left top no-repeat; */
+  /* background-attachment: fixed; */
+  z-index: 16;
+}
+.mouse {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: url(./img/liveconcert2.jpg);
+  background-attachment: fixed;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  border: 5px solid;
+  z-index: 17;
+}
 .yellow-left-side {
   /* background-color: violet; */
   height: 100%;
