@@ -141,7 +141,7 @@ header {
 }
 
 .title {
-  color: white;
+  color: black;
 }
 .slider-container {
   color: white;
@@ -181,8 +181,8 @@ background-color: none;
   margin: 5px;
 }
 
-.sliderTitle {
-  color: white;
+.subtitle {
+  color: black;
   z-index: -1
 }
 
