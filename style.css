@@ -555,6 +555,23 @@ footer {
   background-color: #5E33D1;
   height: 300px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 3rem;
+  color: white;
+}
+
+footer .email {
+  color: white;
+  display: flex;
+ margin: 0 830px 100px 0;
+  justify-content: space-evenly;
+  overflow: visible;
+}
+footer i{
+  margin-right: 2em;
 }
 
 
