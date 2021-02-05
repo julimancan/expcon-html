@@ -212,8 +212,8 @@ background-color: none;
   background-color: var(--cyan);
   height: 400px;
   width: 100%;
-  /* position: relative;
-  z-index: -2; */
+  /* position: relative; */
+  /* z-index: -2; */
 }
 .trynow-box {
   background-color: var(--black);
