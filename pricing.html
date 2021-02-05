@@ -4,8 +4,174 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pricing</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./pricing-styles.css" />
+  <link rel="stylesheet" href="./menu-black.css" />
+  <link rel="stylesheet" href="./menu-red-pricing.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+  <script src="./hamburgerMenu.js"></script>
 </head>
 <body>
-  <h1>Pricing</h1>
+  <div id="menu-bar-black">
+    <h1 class="nav-title-black" id="nav-title-black">EXP|CON</h1>
+    <div id="menu-black" onclick="onClickMenuBlack()">
+      <div id="bar1-black" class="bar-black"></div>
+      <div id="bar2-black" class="bar-black"></div>
+      <div id="bar3-black" class="bar-black"></div>
+    </div>
+    <ul class="nav-black" id="nav-black">
+      <li><a href="#">WHAT IS IT</a></li>
+      <li><a href="#">PERKS</a></li>
+      <li><a href="#">PRICING</a></li>
+    </ul>
+  </div>
+  <div class="menu-bg-black" id="menu-bg-black"></div>
+  <div class="pricing-top">
+    <div class="titles">
+
+      <h1>Pricing</h1>
+      <p>Test out our app today! Choose from three subscription based payment models.</p>
+    </div>
+    <div class="pricing-models">
+      <div class="pricing-model">
+        <h2 class="left">BASIC</h2>
+        <div class="pricing-line-left"></div>
+        <h2 class="left">MONTHLY</h2>
+        <h3 class="left">$9</h3>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>Very good</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>Amazing</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>Perfect job</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>Love this</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>It's so good</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>Features</p>
+        </div>
+        <button class="pricing-select-button-left">SELECT</button>
+      </div>
+      <div class="pricing-model">
+        <h2 class="center">ADVANCED</h2>
+        <div class="pricing-line-center"></div>
+        <h2 class="center">YEARLY</h2>
+        <h3 class="center">$99</h3>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>Very very good</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>Even Amazing</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>Perfect job</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>Love this more</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>It's so so good</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>More Features</p>
+        </div>
+        <button class="pricing-select-button-center">SELECT</button>
+      </div>
+      <div class="pricing-model">
+        <h2 class="right">PRO</h2>
+        <div class="pricing-line-right"></div>
+        <h2 class="right">YEARLY</h2>
+        <h3 class="right">$120</h3>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>Very good</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>Even more</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>Perfect job</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>Love this more</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>It's so so good</p>
+        </div>
+        <div class="pricing-details">
+          <i class="fas fa-music"></i>
+          <p>More Features</p>
+        </div>
+        <button class="pricing-select-button-right">SELECT</button>
+      </div>
+    </div>
+  </div>
+  <div class="pricing-bottom">
+    <div id="menu-bar-red">
+      <h1 class="nav-title-red" id="nav-title-red">EXP|CON</h1>
+      <div id="menu-red" onclick="onClickMenuRed()">
+        <div id="bar1-red" class="bar-red"></div>
+        <div id="bar2-red" class="bar-red"></div>
+        <div id="bar3-red" class="bar-red"></div>
+      </div>
+      <ul class="nav-red" id="nav-red">
+        <li><a href="#">WHAT IS IT</a></li>
+        <li><a href="#">PERKS</a></li>
+        <li><a href="#">PRICING</a></li>
+      </ul>
+    </div>
+    <div class="menu-bg-red" id="menu-bg-red"></div>
+    <div class="pricing-bottom-content">
+      <h1>PERKS</h1>
+      <div class="perks-box-info">
+
+        <section class="left-side">
+          <div class="perks-line"></div>
+          <h2>Subscription Payment Model</h2>
+          <p>No commitment. Cancel anytime. Never worry about forgetting a payment again!</p>
+        </section>
+        <section class="center-side">
+          <div class="perks-line"></div>
+          <h2>No Fee Cancelation Policy</h2>
+          <p>No commitment. Cancel anytime. Never worry about forgetting a payment again!</p>
+        </section>
+        <section class="text-right-side">
+          <div class="perks-line"></div>
+          <h2>Subscription Payment Model</h2>
+          <p>No commitment. Cancel anytime. Never worry about forgetting a payment again!</p>
+        </section>
+      </div>  
+    </div>
+  </div>
 </body>
+<footer>
+  <div class="email">
+    <i class="fas fa-envelope"></i>
+    <p>support@experienceconcerts.co</p>
+  </div>
+  <h1>EXP|CON</h1>
+  <p>2019 @ All Rights Reserved | Speer Technologies Incorporated</p>
+</footer>
 </html>
