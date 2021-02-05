@@ -50,6 +50,7 @@ header {
 }
 
 .nav-title {
+  text-decoration: none;
   color: white;
   z-index: 1;
   position: absolute;
@@ -181,6 +182,8 @@ background-color: none;
   margin: 5px;
 }
 
+
+
 .subtitle {
   color: var(--cyan);
   z-index: -1
@@ -297,28 +300,37 @@ background-color: none;
 .circle1 {
   height: 200px;
   width: 200px;
-  background-color: turquoise;
+  background: url(./img/liveconcert2.jpg) left top no-repeat;
+  background-attachment: fixed;
   border-radius: 50%;
   position: absolute;
   right: 0;
   top: 5%;
+
 }
+
+
 .circle2 {
   height: 400px;
   width: 400px;
-  background-color: turquoise;
+  /* background-color: turquoise; */
+  background: url(./img/liveconcert2.jpg) left top no-repeat;
+  background-attachment: fixed;
   border-radius: 50%;
   position: absolute;
+  z-index: 20;
 }
 .circle3 {
   height: 150px;
   width: 150px;
-  background-color: turquoise;
+  /* background-color: turquoise; */
+  background: url(./img/liveconcert2.jpg) left top no-repeat;
+  background-attachment: fixed;
   border-radius: 50%;
   position: absolute;
   right: 3%;
-
 }
+
 .yellow-right-side {
   height: 100%;
   width: 60%;
@@ -344,7 +356,9 @@ background-color: none;
 .circle4 {
   height: 300px;
   width: 300px;
-  background-color: turquoise;
+  /* background-color: turquoise; */
+  background: url(./img/liveconcert2.jpg) left top no-repeat;
+  background-attachment: fixed;
   border-radius: 50%;
   position: absolute;
   right: -40px;

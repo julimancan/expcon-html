@@ -98,7 +98,7 @@
   color: var(--red);
 }
 .change .what-is-it {
-  color: red;
+  color: var(--red);
 }
 .change-red #bar1-red {
   transform: translateY(10px) rotatez(180deg);
