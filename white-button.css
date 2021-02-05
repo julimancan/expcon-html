@@ -1,0 +1,35 @@
+.white-button {
+  background-color: white;
+  padding: 1.5em 3em;
+  margin: 4em;
+  border: none;
+  color: var(--red);
+  font-size: 0.8em;
+  width: 200px;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.white-button span {
+  position: relative;
+  pointer-events: none;
+}
+.white-button::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  /* background: radial-gradient(circle closest-side, var(--cyan), transparent); */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: width .2s ease, height .2s ease;
+}
+
+.white-button:hover::before {
+  --size: 400px;
+}
