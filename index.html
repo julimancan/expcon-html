@@ -20,7 +20,7 @@
     <!-- slider -->
     <header>
       <div id="menu-bar" onclick="onClickMenu()">
-        <h1 class="nav-title">EXP|CON</h1>
+        <h1><a class="nav-title" href="#">EXP|CON</a></h1>
         <div id="menu">
           <div id="bar1" class="bar"></div>
           <div id="bar2" class="bar"></div>
@@ -42,12 +42,9 @@
         </p>
         <a href="./pricing.html" class="btn-mix-noborder" data-text="TRY IT NOW">TRI IT NOW</a>
 
-        <!-- <button class="button">Button</button> -->
       </div>
     </header>
-    <!-- slider nav -->
     <nav>
-      <!-- <a href="#" class="main-nav prev" data-nav="previous"> <img src="./img/white-button.png"> <span></span></a> -->
       <div class="slider-navigation">
 
         <a href="#" class="main-nav next" data-nav="next">
@@ -66,11 +63,15 @@
     <script src="./headerSlider.js"></script>
     <script src="./hamburgerMenu.js"></script>
     <script src="./white-button.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./hoverOverEffect.js"></script>
+    <!-- <script src="./jquery-3.1.1.min.js"></script> -->
+
 
 
     <div class="red-box">
       <div id="menu-bar-red">
-        <h1 class="nav-title-red" id="nav-title-red">EXP|CON</h1>
+        <h1><a class="nav-title-red" href="#">EXP|CON</a></h1>
         <div id="menu-red" onclick="onClickMenuRed()">
           <div id="bar1-red" class="bar-red"></div>
           <div id="bar2-red" class="bar-red"></div>
@@ -109,15 +110,7 @@
 
     </div>
     <div class="yellow-box">
-      <!-- <svg width="0" height="0" viewBox="0 0 400 300">
-        <defs>
-          <mask id="mask">
-            <rect fill="#000000" x="0" y="0" width="400" height="300"></rect>
-            <circle fill="#FFFFFF" cx="150" cy="150" r="100" />
-            <circle fill="#FFFFFF" cx="50" cy="50" r="150" />
-          </mask>
-        </defs>
-      </svg> -->
+ 
       <div class="yellow-bg-image">
 
         <img  src="./img/liveconcert2.jpg">
@@ -125,39 +118,48 @@
       <div class="yellow-content-container">
 
         
-      <div id="menu-bar-yellow">
-        <h1 class="nav-title-yellow" id="nav-title-yellow">EXP|CON</h1>
-        <div id="menu-yellow" onclick="onClickMenuYellow()">
-          <div id="bar1-yellow" class="bar-yellow"></div>
-          <div id="bar2-yellow" class="bar-yellow"></div>
-          <div id="bar3-yellow" class="bar-yellow"></div>
-        </div>
-        <ul class="nav-yellow" id="nav-yellow">
-          <li><a href="#">WHAT IS IT</a></li>
-          <li><a href="#">PERKS</a></li>
-          <li><a href="#">PRICING</a></li>
-        </ul>
-      </div>
-      <div class="menu-bg-yellow" id="menu-bg-yellow"></div>
+     
     </div>
     <div class="yellow-text">
-      
-      <div class="yellow-left-side">
-        <div class="circle1"></div>
-        <div class="circle2"></div>
-        <div class="circle3"></div>
-      </div>
-      <div class="yellow-right-side">
-        <div class="top-right-button">
+      <div class="mouse_area_wrap">
+        <div class="mouse_hover_area">
+          <div id="menu-bar-yellow">
+            <h1 class="nav-title-yellow" id="nav-title-yellow">EXP|CON</h1>
+            <div id="menu-yellow" onclick="onClickMenuYellow()">
+              <div id="bar1-yellow" class="bar-yellow"></div>
+              <div id="bar2-yellow" class="bar-yellow"></div>
+              <div id="bar3-yellow" class="bar-yellow"></div>
+            </div>
+            <ul class="nav-yellow" id="nav-yellow">
+              <li><a href="#">WHAT IS IT</a></li>
+              <li><a href="#">PERKS</a></li>
+              <li><a href="#">PRICING</a></li>
+            </ul>
+          </div>
+          <div class="menu-bg-yellow" id="menu-bg-yellow"></div>
+          <div class="yellow-right-side">
+            <div class="top-right-button">
+              
+              <a href="./pricing.html" class="white-button" data-text="TRY IT NOW">TRY IT NOW</a>
+            </div>
+            
+            <h1>FRONT ROW SEATS</h1>
+            <p>Experience concerts up close and personal</p>
+            <button class="white-button"><span>SEE DEMO</span></button>
+          </div>
+        </div>
+        <div class="mouse">
 
-          <a href="./pricing.html" class="white-button" data-text="TRY IT NOW">TRY IT NOW</a>
+  
+        </div>
+      </div>
+      <div class="yellow-left-side">
+        <div class="circle1">
+          <!-- <img class="clip-image1" alt="" src="img/liveconcert2.jpg"> -->
         </div>
 
-        <h1>FRONT ROW SEATS</h1>
-        <p>Experience concerts up close and personal</p>
-        <button class="white-button"><span>SEE DEMO</span></button>
-        <div class="circle4"></div>
-      
+        <div class="circle2"></div>
+        <div class="circle3"></div>
       </div>
     </div>
     </div>
