@@ -7,11 +7,27 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./payments.css" />
     <link rel="stylesheet" href="./gradient-button.css" />
+    <link rel="stylesheet" href="./menu-white.css" />
+
 
     <title>PAYMENT</title>
   </head>
   <body>
     <div class="payments-section">
+      <div id="menu-bar-white">
+        <h1><a class="nav-title-white" href="./index.html">EXP|CON</a></h1>
+        <div id="menu-white" onclick="onClickMenuWhite()">
+          <div id="bar1-white" class="bar-white"></div>
+          <div id="bar2-white" class="bar-white"></div>
+          <div id="bar3-white" class="bar-white"></div>
+        </div>
+        <ul class="nav-white" id="nav-white">
+          <li><a href="#">WHAT IS IT</a></li>
+          <li><a href="#">PERKS</a></li>
+          <li><a href="#">PRICING</a></li>
+        </ul>
+      </div>
+      <div class="menu-bg-white" id="menu-bg-white"></div>
       <form id="myform">
       <h1>PAYMENT</h1>
       <h2>1. Select your plan</h2>
@@ -109,6 +125,7 @@
       </form>
    
     </div>
+    <script src="./hamburgerMenu.js"></script>
   </body>
   <footer>
     <div class="email">
