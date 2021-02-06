@@ -89,17 +89,35 @@
         <audio id="audio" src="./CAKE-Never-There.mp3" >
           some text
         </audio>
-        <div class="speakers">
-        
-          <img class="speaker"src="./img/speaker1.png">
-          <div class="right-speaker-container">
-            <a href="./pricing.html" class="white-button upper-corner" data-text="TRY IT NOW">TRY IT NOW</a>
-            <img class="speaker"src="./img/speaker-flipped.png">
-            <div id="click-circle" onclick="playMusic()" class="click-circle">
-              CLICK
+        <div class="mouse_area_wrap_red">
+          <div class="speakers">
+            
+            
+            <div class="left-speaker-container">
+
+              <div class="mouse_hover_area_red_left">
+                <img class="speaker" onclick="playMusic()" src="./img/speaker-flipped.png">
+              </div>
+              <div class="mouse_red_left">
+                <div id="click-circle"  class="click-circle">
+                  CLICK
+                </div>
+              </div>
             </div>
+            <div class="right-speaker-container">
+              <div class="mouse_hover_area_red_right" onclick="playMusic()">
+                <img class="speaker"  src="./img/speaker1.png">
+                <div class="mouse_red_right">
+                  <div id="click-circle"  class="click-circle">
+                    CLICK
+                  </div>
+                </div>
+                  <a href="./pricing.html" class="white-button upper-corner" data-text="TRY IT NOW">TRY IT NOW</a>
+                </div>
+              </div>
           </div>
         </div>
+        
       </div>
 
     </div>
@@ -175,7 +193,6 @@
       <div class="menu-bg-black" id="menu-bg-black"></div>
     <div class="black-box-content">
       <div class="button-div">
-
         <a  href="./pricing.html" class="btn-mix-noborder" data-text="TRY NOW"></a>
       </div>
       <h1>PERKS</h1>

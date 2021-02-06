@@ -4,6 +4,7 @@
   --black: black;
   --cyan: #1FE1E9;
   --main-bg-color: brown;
+  --purple: #5E33D1;
 }
 * {
   padding: 0;
@@ -201,8 +202,8 @@ background-color: none;
   height: 100%;
   display: flex;
   /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
+ 
+  /* align-items: center; */
   /* position: absolute; */
 }
 
@@ -244,8 +245,30 @@ background-color: none;
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: 2em;
-  cursor: pointer;
+  /* bottom: 2em; */
+  /* cursor: pointer; */
+  /* z-index: 20; */
+  /* display: none; */
+  /* left: 45%;
+  top: 45% */
+}
+.left-speaker-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.right-speaker-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.left-speaker-container:hover .mouse_red_left {
+  display: block;
+}
+.right-speaker-container:hover .mouse_red_right {
+  display: block;
 }
 .yellow-box {
   height: 600px;
@@ -293,14 +316,43 @@ background-color: none;
   overflow: hidden;
   z-index: 16;
 }
+.mouse_area_wrap_red {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  /* z-index: 2000; */
+  right: 0;
+  
+  
+}
 
 .mouse_hover_area {
   width: 100%;
   height: 120%;
-  /* background: url(./img/liveconcert2.jpg) left top no-repeat; */
-  /* background-attachment: fixed; */
   z-index: 16;
 }
+
+.mouse_hover_area_red_right {
+  width: 203px;
+  height: 300px;
+}
+.mouse_hover_area_red_right .speaker{
+  position: relative;
+  right: 74px;
+}
+.mouse_hover_area_red_left .speaker{
+  position: relative;
+  right: 74px;
+}
+.mouse_hover_area_red_left {
+  width: 203px;
+  height: 300px;
+}
+.mouse_hover_area_red .speaker{
+  position: absolute;
+}
+
 .mouse {
   width: 200px;
   height: 200px;
@@ -312,6 +364,15 @@ background-color: none;
   top: 45%;
   /* border: 5px solid; */
   z-index: -5;
+  
+}
+.mouse_red_right {
+  position: absolute;
+  display: none;
+}
+.mouse_red_left {
+  position: absolute;
+  display: none;
 }
 .yellow-left-side {
   /* background-color: violet; */
@@ -438,6 +499,14 @@ background-color: none;
 .black-box-info section p {
   margin-top: 2em;
   color: white;
+}
+.red-text {
+  top: 45%;
+    flex-direction: column;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
 }
 
 .red-left-side h2 {
@@ -591,7 +660,7 @@ background-color: none;
   }
 
 footer {
-  background-color: #5E33D1;
+  background-color: var(--purple);
   height: 300px;
   width: 100%;
   display: flex;

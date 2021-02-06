@@ -6,13 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./payments.css" />
+    <link rel="stylesheet" href="./gradient-button.css" />
+    <link rel="stylesheet" href="./menu-white.css" />
+
 
     <title>PAYMENT</title>
   </head>
   <body>
     <div class="payments-section">
+      <div id="menu-bar-white">
+        <h1><a class="nav-title-white" href="./index.html">EXP|CON</a></h1>
+        <div id="menu-white" onclick="onClickMenuWhite()">
+          <div id="bar1-white" class="bar-white"></div>
+          <div id="bar2-white" class="bar-white"></div>
+          <div id="bar3-white" class="bar-white"></div>
+        </div>
+        <ul class="nav-white" id="nav-white">
+          <li><a href="#">WHAT IS IT</a></li>
+          <li><a href="#">PERKS</a></li>
+          <li><a href="#">PRICING</a></li>
+        </ul>
+      </div>
+      <div class="menu-bg-white" id="menu-bg-white"></div>
+      <form id="myform">
       <h1>PAYMENT</h1>
-      <p>1. Select your plan</p>
+      <h2>1. Select your plan</h2>
       <div class="plan-selection">
         <input
           type="checkbox"
@@ -29,24 +47,27 @@
         />
         <label class="select-advanced" for="select-basic">ADVANCED</label>
         <input type="checkbox" id="select-pro" name="select-pro" value="Pro" />
-        <label class="select-pro" for="select-basic">PRO</label>
+        <label class="select-pro" for="select-pro">PRO</label>
       </div>
-      <form>
         <div class="billing-and-credit-info">
           <div class="billing-info">
-            <p>2. Billing Information</p>
+            <h2>2. Billing Information</h2>
             <label for="full-name">Full Name</label>
-            <input type="text" id="full-name" name="full-name" />
+            <input class="input-class" type="text" id="full-name" name="full-name" />
             <label for="billing-address">Billing Address</label>
-            <input type="text" id="billing-address" name="billing-address" />
+            <input type="text" class="input-class" id="billing-address" name="billing-address" />
             <div class="city-postal-code">
-              <label for="city">City</label>
-              <input type="text" id="city" name="city" />
-              <label for="postal">Postal Code</label>
-              <input type="text" id="postal" name="postal" />
+              <div class="city">
+                <label for="city">City</label>
+                <input type="text" class="input-class" id="city" name="city" />
+              </div>
+              <div class="postal">
+                <label for="postal">Postal Code</label>
+                <input type="text" id="postal" class="input-class" name="postal" />
+              </div>
             </div>
             <label>Country</label>
-            <select id="country">
+            <select id="country" class="input-class">
               <option value="1">Canada</option>
               <option value="2">USA</option>
               <option value="3">Mexico</option>
@@ -54,44 +75,57 @@
             </select>
           </div>
           <div class="credit-info">
-            <p>3. Credit Card Information</p>
-            <label for="cardholder-name">Cardholder's Name</label>
-            <input type="text" id="cardholder-name" name="cardholder-name" />
-            <label for="card-number">Card Number</label>
-            <input type="text" id="card-number" name="card-number" />
+            <h2>3. Credit Card Information</h2>
+            <label for="cardholder-name"><p>Cardholder's Name</p></label>
+            <input type="text" class="input-class" id="cardholder-name" name="cardholder-name" />
+            <label for="card-number"><p>Card Number</p></label>
+            <input type="text" class="input-class" id="card-number" name="card-number" />
             <div class="month-year">
-              <label>Expiry Month</label>
-              <select id="expiry-month" placeholder="">
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="5">April</option>
-                <option value="6">May</option>
-                <option value="7">June</option>
-                <option value="8">July</option>
-                <option value="9">August</option>
-                <option value="10">September</option>
-                <option value="11">October</option>
-                <option value="12">November</option>
-                <option value="13">December</option>
-              </select>
-              <label>Expiry Year</label>
-              <select id="expiry-Year">
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-              </select>
+              <div class="month">
+
+                <label><p>Expiry Month</p></label>
+                <select class="input-class" id="expiry-month" placeholder="">
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="5">April</option>
+                  <option value="6">May</option>
+                  <option value="7">June</option>
+                  <option value="8">July</option>
+                  <option value="9">August</option>
+                  <option value="10">September</option>
+                  <option value="11">October</option>
+                  <option value="12">November</option>
+                  <option value="13">December</option>
+                </select>
+              </div>
+              <div class="year">
+
+                <label><p>Expiry Year</p></label>
+                <select class="input-class" id="expiry-Year">
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                </select>
+              </div>
             </div>
+            <label for="cvv"><p>CVV</p></label>
+            <input  class="input-class" type="text" id="cvv" name="cvv" />
+
           </div>
         </div>
-        By continuing, I acknowledge that I've read and agreed to the
-        <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>
-        <input type="submit" value="Download" class="btn" />
+        <p class="terms">By continuing, I acknowledge that I've read and agreed to the
+        <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a></p>
+       <div class="button-div">
+         <a href="" class="btn-mix-noborder" data-text="Download" onclick="document.getElementById('myform').submit()"></a>
+        </div>
+
       </form>
-      <p></p>
+   
     </div>
+    <script src="./hamburgerMenu.js"></script>
   </body>
   <footer>
     <div class="email">

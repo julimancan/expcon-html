@@ -1,4 +1,3 @@
-
 const onClickMenu = () => {
   document.getElementById("menu").classList.toggle("change");
   document.getElementById("nav").classList.toggle("change");
@@ -64,4 +63,17 @@ const onClickMenuSkyblue = () => {
   document
     .getElementById("nav-title-skyblue")
     .classList.toggle("change-nav-title-skyblue");
+};
+const onClickMenuWhite = () => {
+  document.getElementById("menu-white").classList.toggle("change-white");
+  document.getElementById("nav-white").classList.toggle("change-white");
+  document
+    .getElementById("menu-bg-white")
+    .classList.toggle("change-bg-white");
+  document.getElementById("bar1-white").classList.toggle("change-white");
+  document.getElementById("bar2-white").classList.toggle("change-white");
+  document.getElementById("bar3-white").classList.toggle("change-white");
+  document
+    .getElementById("nav-title-white")
+    .classList.toggle("change-nav-title-white");
 };
