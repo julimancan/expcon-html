@@ -4,7 +4,7 @@
   margin: 30px 0 20px 20px;
   cursor: pointer;
   position: absolute;
-  /* top: 1000px!important; */
+  top: 706px!important;
   left: 0!important;
   z-index: 13;
 }
@@ -27,10 +27,11 @@
 }
 .nav-title-red {
   color: white;
-  position: absolute;
+  position: relative;
   left: 65px;
-  top: 595px;
+  top: 20px;
   z-index: 13;
+  text-decoration: none;
 }
 
 .nav-red {
@@ -39,7 +40,7 @@
   margin: 30px 0 20px 20px;
   cursor: pointer;
   position: absolute;
-  top: 610px!important;
+  top: 770px!important;
   left: 0px!important;
   z-index: 13;
   transition: 0.5s ease;

@@ -55,17 +55,8 @@
         ></a>
       </div>
     </nav>
-    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
-    <script src="./headerSlider.js"></script>
-    <script src="./hamburgerMenu.js"></script>
-    <script src="./white-button.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./hoverOverEffect.js"></script>
-    <!-- <script src="./jquery-3.1.1.min.js"></script> -->
+    
+
 
 
 
@@ -95,13 +86,16 @@
           </span>
         </button>
         </div>
+        <audio id="audio" src="./CAKE-Never-There.mp3" >
+          some text
+        </audio>
         <div class="speakers">
         
           <img class="speaker"src="./img/speaker1.png">
           <div class="right-speaker-container">
             <a href="./pricing.html" class="white-button upper-corner" data-text="TRY IT NOW">TRY IT NOW</a>
             <img class="speaker"src="./img/speaker-flipped.png">
-            <div class="click-circle">
+            <div id="click-circle" onclick="playMusic()" class="click-circle">
               CLICK
             </div>
           </div>
@@ -295,6 +289,17 @@
           </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
+    <script src="./headerSlider.js"></script>
+    <script src="./hamburgerMenu.js"></script>
+    <script src="./white-button.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./hoverOverEffect.js"></script>
+    <script src="./audio.js"></script>
   </body>
 
   <footer>
