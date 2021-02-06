@@ -252,10 +252,22 @@ background-color: none;
   /* left: 45%;
   top: 45% */
 }
-.left-speaker-container:hover .mouse_red {
+.left-speaker-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.right-speaker-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.left-speaker-container:hover .mouse_red_left {
   display: block;
 }
-.right-speaker-container:hover .mouse_red {
+.right-speaker-container:hover .mouse_red_right {
   display: block;
 }
 .yellow-box {
@@ -321,14 +333,24 @@ background-color: none;
   z-index: 16;
 }
 
-.mouse_hover_area_red {
-  width: 100px;
+.mouse_hover_area_red_right {
+  width: 203px;
   height: 300px;
-  z-index: 100;
+}
+.mouse_hover_area_red_right .speaker{
+  position: relative;
+  right: 74px;
+}
+.mouse_hover_area_red_left .speaker{
+  position: relative;
+  right: 74px;
+}
+.mouse_hover_area_red_left {
+  width: 203px;
+  height: 300px;
 }
 .mouse_hover_area_red .speaker{
   position: absolute;
-
 }
 
 .mouse {
@@ -344,17 +366,12 @@ background-color: none;
   z-index: -5;
   
 }
-.mouse_red {
-  /* width: 200px; */
-  /* height: 200px; */
-  /* border-radius: 50%; */
-  /* background: url(./img/liveconcert2.jpg); */
-  /* background-attachment: fixed; */
+.mouse_red_right {
   position: absolute;
-  /* margin: 0 1em 1em 0; */
-  /* top: 45%; */
-  /* border: 5px solid; */
-  /* z-index: -5; */
+  display: none;
+}
+.mouse_red_left {
+  position: absolute;
   display: none;
 }
 .yellow-left-side {
