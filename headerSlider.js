@@ -10,8 +10,8 @@ const texts = []
 // interval setup
 const imageInterval = 10000;
 const clickImage = () => {
-  document.getElementById("slider-next12").click();
-}
+  document.getElementById("slider-next").click();
+};
 const changeImage = setInterval(clickImage, imageInterval);
 const stopImageChange = () => {
   clearInterval(changeImage);
