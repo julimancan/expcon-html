@@ -62,7 +62,7 @@
           <i class="fas fa-music"></i>
           <p>Features</p>
         </div>
-        <a href="./payments.html" class="pricing-select-button-left" data-text="TRY IT NOW">SELECT</a>
+        <a href="./payments.html" onclick="selectPlan('basic')" class="pricing-select-button-left" data-text="TRY IT NOW">SELECT</a>
 
         <!-- <button class="pricing-select-button-left">SELECT</button> -->
       </div>
@@ -95,7 +95,7 @@
           <i class="fas fa-music"></i>
           <p>More Features</p>
         </div>
-        <a href="./payments.html" class="pricing-select-button-center" data-text="TRY IT NOW">SELECT</a>
+        <a href="./payments.html" onclick="selectPlan('advanced')" class="pricing-select-button-center" data-text="TRY IT NOW">SELECT</a>
       </div>
       <div class="pricing-model">
         <h2 class="right">PRO</h2>
@@ -126,7 +126,7 @@
           <i class="fas fa-music"></i>
           <p>More Features</p>
         </div>
-        <a href="./payments.html" class="pricing-select-button-right" data-text="TRY IT NOW">SELECT</a>
+        <a href="./payments.html" onclick="selectPlan('pro')" class="pricing-select-button-right" data-text="TRY IT NOW">SELECT</a>
       </div>
     </div>
   </div>
@@ -168,6 +168,7 @@
     </div>
   </div>
   <script src="./hamburgerMenu.js"></script>
+  <script src="./pricing.js"></script>
 </body>
 <footer>
   <div class="email">
