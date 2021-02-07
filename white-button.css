@@ -1,11 +1,16 @@
 .white-button {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   background-color: white;
-  padding: 1.5em 3em;
+  /* padding: 1em .5em 1em .5em; */
+  padding: 1em 2em;
   margin: 4em;
   border: none;
   color: var(--red);
-  font-size: 0.8em;
-  width: 200px;
+  font-size: 1em;
+  /* width: 200px; */
   cursor: pointer;
   outline: none;
   overflow: hidden;
@@ -15,6 +20,11 @@
 .white-button span {
   position: relative;
   pointer-events: none;
+  overflow: hidden;
+}
+
+.white-button span a {
+  color: var(--red);
 }
 .white-button::before {
   --size: 0;
@@ -24,7 +34,10 @@
   top: var(--y);
   width: var(--size);
   height: var(--size);
-  /* background: radial-gradient(circle closest-side, var(--cyan), transparent); */
+  background: radial-gradient(circle closest-side,
+   var(--yellow), 
+   /* pink, */
+   transparent);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   transition: width .2s ease, height .2s ease;
@@ -33,3 +46,4 @@
 .white-button:hover::before {
   --size: 400px;
 }
+
