@@ -4,9 +4,22 @@ const images = [
   "./img/liveconcert1.jpg",
   "./img/liveconcert2.jpg",
 ];
-
 // content setup
 const texts = []
+
+// interval setup
+const imageInterval = 10000;
+const clickImage = () => {
+  document.getElementById("slider-next12").click();
+}
+const changeImage = setInterval(clickImage, imageInterval);
+const stopImageChange = () => {
+  clearInterval(changeImage);
+  window.onload = () => {
+    changeImage;
+    setTimeout(stopImageChange, 30000);
+  };
+}
 
 // init plugin 
 rgbKineticSlider = new rgbKineticSlider({// images and content sources
