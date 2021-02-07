@@ -80,7 +80,6 @@
 }
 
 .pricing-select-button-left {
-  width: 200px;
   height: 50px;
   border-radius: 50px;
   background-color: var(--red);
@@ -92,7 +91,6 @@
 }
 
 .pricing-select-button-center {
-  width: 200px;
   height: 50px;
   border-radius: 50px;
   background-color: var(--yellow);
@@ -104,7 +102,6 @@
 }
 
 .pricing-select-button-right {
-  width: 200px;
   height: 50px;
   border-radius: 50px;
   background-color: var(--cyan);

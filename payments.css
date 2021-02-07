@@ -84,3 +84,7 @@ input:focus {
   outline: none !important;
   border-bottom: 4px solid var(--purple);
 }
+
+.payments-section .btn-mix-noborder {
+  padding: 2.3em 3em !important;
+}
