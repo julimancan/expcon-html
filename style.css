@@ -489,18 +489,13 @@ background-color: none;
   align-items: center;
   justify-content: center;
 }
-/* 
- .button-div {
+ 
+ .black-box-content a {
   position: absolute;
   top: 0%;
   right: 0%;
-  margin: 2em;
-  /* height: 50px; 
-  /* width: 200px; 
-  padding: 1.5em 3em;
-  border-radius: 50px;
-  overflow: hidden;
-} */
+ }
+
 .black-box-content h1 {
   color: white;
   left: 5.5em;
@@ -536,9 +531,7 @@ background-color: none;
   align-items: center;
   justify-content: center;
 }
-.button-div {
-  /* background-color: blue; */
-}
+
 
 .red-left-side h2 {
   color: var(--red);
@@ -677,12 +670,13 @@ background-color: none;
   align-items: center;
   justify-content: space-around;
 }
-.right-side-trynow h1 {
+.left-side-trynow h1 {
   color: var(--red);
 }
-.right-side-trynow p {
+.left-side-trynow p {
   color: white;
 }
+
 .trynow-button {
   height: 50px;
   width: 200px;
