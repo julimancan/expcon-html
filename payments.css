@@ -90,6 +90,7 @@ form h1 {
 }
 .terms a{
   color: blue;
+  font-weight: bold;
 }
 
 form .button-div {
@@ -145,5 +146,5 @@ button {
 
 button a{
   text-decoration: none;
-  color: gray
+  color: gray;
 }
