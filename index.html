@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./menu-black.css" />
     <link rel="stylesheet" href="./menu-skyblue.css" />
     <link rel="stylesheet" href="./menu-black2.css" />
+    <link rel="stylesheet" href="./menu-black1.css" />
     <link rel="stylesheet" href="./gradient-button.css" />
     <link rel="stylesheet" href="./white-button.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
@@ -19,20 +20,20 @@
   <body>
     <!-- slider -->
     <header>
-      <div id="menu-bar" onclick="onClickMenu()">
-        <h1><a class="nav-title" href="#">EXP|CON</a></h1>
-        <div id="menu">
-          <div id="bar1" class="bar"></div>
-          <div id="bar2" class="bar"></div>
-          <div id="bar3" class="bar"></div>
+      <div id="menu-bar-black1" >
+        <h1><a class="nav-title-black1" href="#">EXP|CON</a></h1>
+        <div id="menu-black1" onclick="onClickMenu('black1')">
+          <div id="bar1-black1" class="bar"></div>
+          <div id="bar2-black1" class="bar"></div>
+          <div id="bar3-black1" class="bar"></div>
         </div>
-        <ul class="nav" id="nav">
+        <ul class="nav-black1" id="nav-black1">
           <li><a href="#">WHAT IS IT</a></li>
           <li><a href="#">PERKS</a></li>
           <li><a href="#">PRICING</a></li>
         </ul>
       </div>
-      <div class="menu-bg" id="menu-bg"></div>
+      <div class="menu-bg-black1" id="menu-bg-black1"></div>
       <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
       <div class="slider-container">
         <h1 class="title">INTERACTIVE CONCERT EXPERIENCE</h1>
@@ -63,7 +64,7 @@
     <div class="red-box">
       <div id="menu-bar-red">
         <h1><a class="nav-title-red" href="#">EXP|CON</a></h1>
-        <div id="menu-red" onclick="onClickMenuRed()">
+        <div id="menu-red" onclick="onClickMenu('red')">
           <div id="bar1-red" class="bar-red"></div>
           <div id="bar2-red" class="bar-red"></div>
           <div id="bar3-red" class="bar-red"></div>
@@ -143,7 +144,7 @@
       <div class="mouse_hover_area">
         <div id="menu-bar-yellow">
           <h1 class="nav-title-yellow" id="nav-title-yellow">EXP|CON</h1>
-          <div id="menu-yellow" onclick="onClickMenuYellow()">
+          <div id="menu-yellow" onclick="onClickMenu('yellow')">
             <div id="bar1-yellow" class="bar-yellow"></div>
             <div id="bar2-yellow" class="bar-yellow"></div>
             <div id="bar3-yellow" class="bar-yellow"></div>
@@ -194,7 +195,7 @@
 
     <div id="menu-bar-black">
       <h1 class="nav-title-black" id="nav-title-black">EXP|CON</h1>
-      <div id="menu-black" onclick="onClickMenuBlack()">
+      <div id="menu-black" onclick="onClickMenu('black')">
         <div id="bar1-black" class="bar-black"></div>
         <div id="bar2-black" class="bar-black"></div>
         <div id="bar3-black" class="bar-black"></div>
@@ -235,7 +236,7 @@
   <div class="skyblue-box">
       <div id="menu-bar-skyblue">
         <h1 class="nav-title-skyblue" id="nav-title-skyblue">EXP|CON</h1>
-        <div id="menu-skyblue" onclick="onClickMenuSkyblue()">
+        <div id="menu-skyblue" onclick="onClickMenu('skyblue')">
           <div id="bar1-skyblue" class="bar-skyblue"></div>
           <div id="bar2-skyblue" class="bar-skyblue"></div>
           <div id="bar3-skyblue" class="bar-skyblue"></div>
@@ -295,7 +296,7 @@
     <div class="trynow-box">
       <div id="menu-bar-black2">
         <h1 class="nav-title-black2" id="nav-title-black2">EXP|CON</h1>
-        <div id="menu-black2" onclick="onClickMenuBlack2()">
+        <div id="menu-black2" onclick="onClickMenu('black2')">
           <div id="bar1-black2" class="bar-black2"></div>
           <div id="bar2-black2" class="bar-black2"></div>
           <div id="bar3-black2" class="bar-black2"></div>
