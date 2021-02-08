@@ -15,6 +15,8 @@
 body { 
   font-family: "PT Sans", sans-serif;
   background-color: white;
+  font-size: 17px;
+
 }
 
 header {
@@ -34,6 +36,9 @@ header {
   z-index: 1;
 }
 
+h1 {
+  letter-spacing: 4px;
+}
 .bar {
   height: 2.5px;
   width: 100%;
@@ -158,7 +163,11 @@ header {
   align-items: center;
   justify-content: center;
 }
-
+.slider-container a {
+  font-size: 12px;
+  word-spacing: 6px;
+  margin: 1em;
+}
 .main-nav {
   text-decoration: none;
   position: absolute;
@@ -188,7 +197,10 @@ background-color: none;
 
 .subtitle {
   color: var(--cyan);
-  z-index: -1
+  z-index: -1;
+  width: 368px;
+  text-align: center;
+  word-spacing: 1.7px;
 }
 
 .red-box {
@@ -210,6 +222,8 @@ background-color: none;
 
 .red-box-content h1{
   color: white;
+  position: relative;
+  top: -8px;
 }
 
 
@@ -229,7 +243,9 @@ background-color: none;
 .right-speaker-container a {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -65px;
+  word-spacing: 3px;
+  letter-spacing: 2px;
 }  
 
 .speaker {
@@ -340,11 +356,15 @@ background-color: none;
 }
 .mouse_hover_area_red_right .speaker{
   position: relative;
-  right: 74px;
+  right: 102px;
+  top: 90px;
+
+  
 }
 .mouse_hover_area_red_left .speaker{
   position: relative;
   right: 74px;
+  top: -31px;
 }
 .mouse_hover_area_red_left {
   width: 203px;
@@ -428,8 +448,21 @@ background-color: none;
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding: 8em;
+justify-content: center;
+}
+
+.yellow-right-side button {
+  margin: 1em 0 0 0;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+.yellow-right-side p {
+  letter-spacing: 4px;
+  font-size: 21px;
+  width: 392px;
 }
 .yellow-right-side-outside {
   /* top: -26px; */
@@ -450,9 +483,11 @@ background-color: none;
   top: 0;
   right: 0;
   position: absolute;
+  word-spacing: 3px;
+  letter-spacing: 2px;
 }
 .inside-glass {
-  color: white;
+  color: black;
   display: block
 }
 .outside-glass {
@@ -487,22 +522,25 @@ background-color: none;
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
  
  .black-box-content a {
+  top: 37px;
+  right: 58px;
   position: absolute;
-  top: 0%;
-  right: 0%;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  margin: 0;
  }
 
 .black-box-content h1 {
   color: white;
-  left: 5.5em;
-  top: 4em;
-  position: absolute;
-
+    left: 3em;
+    top: 4em;
+    position: relative;
 }
 
 .black-box-info section h2 {
@@ -527,15 +565,33 @@ background-color: none;
   overflow: hidden;
   /* background-color: aliceblue; */
   height: 100%;
-  width: 37%;
+  width: 42%;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
+.red-left-side-text {
+  position: relative;
+  top: 32px;
+  top: 78px;
 
+}
+.red-left-side-text p {
+  letter-spacing: 4px;
+  font-size: 21px;
+  position: absolute;
+  top: 39px;
+
+}
 
 .red-left-side h2 {
   color: var(--red);
+}
+.red-left-side button {
+  margin-left: 0;
+  margin-left: 0;
+  letter-spacing: 3px;
+  word-spacing: 3px;
 }
 
 .cyan-center-side h2 {
@@ -545,6 +601,7 @@ background-color: none;
 .yellow-text-right-side h2 {
   color: var(--yellow);
 }
+
 
 .black-box-info section div {
   height: 2px;
@@ -575,12 +632,12 @@ background-color: none;
 .black-box-info section {
   display: flex;
   flex-direction: column;
-  width: 15%;
+  width: 174px;
 }
  
 .skyblue-box {
   background-color: var(--cyan);
-  height: 400px;
+  height: 630px;
   width: 100%;
   /* position: relative; */
   /* z-index: -2; */
@@ -594,13 +651,20 @@ background-color: none;
   /* justify-content: space-around; */
   align-items: center;
 }
+.skyblue-content a {
+  position: absolute;
+  top: 2390px;
+  right: 0;
+  color: var(--cyan);
+}
 .left-side-skyblue {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 30%;
   height: 100%;
-  margin-left: 10rem;
+  position: relative;
+  left: 68px;
 }
 .left-side-skyblue .top-speaker{
   -webkit-transform:rotate(95deg);
@@ -610,17 +674,18 @@ background-color: none;
   transform: rotate(95deg);
   width: 200px;
   position: relative;
-  margin: 1rem 0 0 2rem ;
+  top: 133px;
 }
 .left-side-skyblue .bottom-speaker{
   -webkit-transform:rotate(84deg);
   -moz-transform: rotate(84deg);
   -ms-transform: rotate(84deg);
   -o-transform: rotate(84deg);
-  transform: rotate(84deg);
+  transform: rotate(-106deg);
   width: 200px;
   position: relative;
-  margin-left: 2rem;
+  left: 100px;
+  top: -47px;
 }
 
 .right-side-skyblue{
@@ -634,13 +699,16 @@ background-color: none;
 .right-side-skyblue h1{
   color: white;
   margin: 0 0 50px 50px;
-
+  position: relative;
+  top: 10px;
 }
 .reviews {
   display: flex;
   justify-content: space-around;
   width: 100%;
   align-items: flex-start;
+  position: relative;
+  left: -29px;
 }
 
 .review {
@@ -649,12 +717,24 @@ background-color: none;
 .stars {
   display: flex;
   justify-content:space-around;
-  width: 200px;
+  width: 146px;
   height: 30px;
-  
+  position: relative;
+  left: 12px;
+}
+.skyblue-text {
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  position: relative;
+  left: 26px;
+}
+.stars i {
+  width: 0;
 }
 .review h2{
   color: white;
+  margin-bottom: 15px;
+
 }
 .trynow-box {
   background-color: var(--black);
@@ -671,11 +751,16 @@ background-color: none;
   align-items: center;
   justify-content: space-around;
 }
+.trynow-content a {
+  font-size: 15px;
+  letter-spacing: 2px;
+}
 .left-side-trynow h1 {
   color: var(--red);
 }
 .left-side-trynow p {
   color: white;
+  font-size: 28px;
 }
 
 .trynow-button {
@@ -696,13 +781,17 @@ footer {
   padding: 3rem;
   color: white;
 }
-
+.copyright {
+  margin-top: 1em;
+}
 footer .email {
   color: white;
   display: flex;
- margin: 0 830px 100px 0;
   justify-content: space-evenly;
   overflow: visible;
+  position: relative;
+  top: -55px;
+  left: -520px;
 }
 footer i{
   margin-right: 2em;

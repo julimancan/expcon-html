@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+
+.menu-in-pricing #menu-bar-black {
+  left: -2px;
+}
+.menu-in-pricing .menu-bg-black {
+  z-index: 4;
+  left: 9px;
+
+}
 .pricing-top {
   background-color: black;
   color: white;
@@ -13,21 +22,35 @@
   justify-content: space-around;
 }
 .titles{
-  margin: 8em 0 3em 14em;
+  margin: 8em 0 3em 4em;
+}
+
+.titles h1 {
+  text-transform: uppercase;
+  font-size: 41px;
+
+}
+
+.titles p {
+  letter-spacing: 3px;
+  font-size: 24px;
 }
 .pricing-models {
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  /* margin-right: 10em; */
-  position: inherit;
-  z-index: 15;
-  padding: 2em;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+    z-index: 15;
+    margin-bottom: 7em;
 }
 .pricing-model {
   display: flex;
   flex-direction: column;
-  align-items: center;}
+  align-items: flex-start;
+}
+.pricing-model a{
+  margin: 1em 0 0 0;
+}
 .left {
   color: var(--red)
 }
@@ -126,6 +149,16 @@
   align-items: center;
   justify-content: space-around;
   height: 200px;
+  position: relative;
+  left: 31px;
+
+}
+.perks-box-info section {
+  width: 20%;
+}
+.perks-box-info section h2 {
+  font-size: 33px;
+  margin-top: 15px;
 }
 
 .perks-line {
@@ -140,4 +173,15 @@
 }
 .perks-box-info p{
   color: black;
+  letter-spacing: 2px;
+  margin-top: 1em;
+}
+.pricing-bottom-content h1 {
+  position: relative;
+  top: -73px;
+  left: 108px;
+  font-size: 43px;
+}
+
+ 1em; */
 }

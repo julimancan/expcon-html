@@ -6,7 +6,7 @@
 body {
   background-color: white;
   width: 100%;
-  height: 900px;
+  height: 1001px;
 }
 
 .payments-section {
@@ -19,8 +19,26 @@ body {
   justify-content: center;
   padding-left: 7em;
 }
+.menu-payments {
+  position: absolute;
+  top: -28px;
+  left: -3px;
+}
+.buttons {
+  position: absolute;
+  top: 851px;
+  left: 0;
+}
 form {
   /* margin: 3em */
+  position: absolute;
+  top: 151px;
+}
+form h1 {
+  margin-bottom: 47px;
+}
+.billing-and-credit-info h2 {
+  margin-bottom: 1em;
 }
 .plan-selection {
   margin: 1em;
@@ -38,6 +56,9 @@ form {
   display: flex;
   width: 100%;
   /* height: 240px; */
+}
+.billing-info label, .credit-info label{
+  margin-bottom: 6px;
 }
 .billing-info, .credit-info {
   display: flex;
@@ -67,11 +88,14 @@ form {
 .terms {
   width: 50%;
 }
+.terms a{
+  color: blue;
+}
 
 form .button-div {
   position: relative;
-
 }
+
 .terms {
   margin: 0 0 10em 2em;
 
@@ -79,6 +103,7 @@ form .button-div {
 .input-class {
   height: 50px;
   /* background-color: peru; */
+  margin-bottom: 1em;
 }
 /* .input-clas:focus {
   background-color: peru;
@@ -92,10 +117,16 @@ input:focus {
 .payments-section .btn-mix-noborder {
   bottom: -46px;
   left: 149px;
-  padding: 1.3em 3em !important;
+  /* padding: 1.3em 3em !important; */
   display: none;
   margin: 0;
   position: absolute;
+  font-size: 10px;
+
+}
+#postal {
+  position: relative;
+  top: 6px;
 }
 
 button {
