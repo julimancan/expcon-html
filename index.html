@@ -79,20 +79,21 @@
       <div class="red-box-content">
         <div class="red-text">
           <div class="red-left-side">
-
-            <h1>SUPERIOR SOUND</h1>
-            <p>Experience live versions of your favourite songs</p>
-            <div class="button-div">
-
-              <button class="white-button">
-                <span>
-                  <a href="#">
-                    SEE DEMO
-                  </a>
-                </span>
-              </button>
-            
-            </div>
+            <div class="red-left-side-text">
+              <h1>SUPERIOR SOUND</h1>
+              <p>Experience live versions of your favourite songs</p>
+              <div class="button-div">
+  
+                <button class="white-button">
+                  <span>
+                    <a href="#">
+                      SEE DEMO
+                    </a>
+                  </span>
+                </button>
+              
+              </div>
+            </div>  
           </div>
         <audio id="audio" src="./CAKE-Never-There.mp3" >
         </audio>
@@ -103,7 +104,7 @@
             <div class="left-speaker-container">
 
               <div class="mouse_hover_area_red_left">
-                <img class="speaker" onclick="playMusic()" src="./img/speaker-flipped.png">
+                <img class="speaker" onclick="playMusic()" src="./img/speaker1.png">
               </div>
               <div class="mouse_red_left">
                 <div id="click-circle"  class="click-circle">
@@ -113,7 +114,7 @@
             </div>
             <div class="right-speaker-container">
               <div class="mouse_hover_area_red_right" onclick="playMusic()">
-                <img class="speaker"  src="./img/speaker1.png">
+                <img class="speaker"  src="./img/speaker-flipped.png">
                 <div class="mouse_red_right">
                   <div id="click-circle"  class="click-circle">
                     CLICK
@@ -165,6 +166,7 @@
           <h1 class="inside-glass">FRONT ROW SEATS</h1>
           <p class="inside-glass">Experience concerts up close and personal</p>
           <button class="white-button"><span>SEE DEMO</span></button>
+          <div class="circle4"></div>
         </div>
       </div>
       <div class="mouse">
@@ -187,7 +189,6 @@
       </div>
 
       <div class="circle2"></div>
-      <div class="circle3"></div>
     </div>
   </div>
   </div>
@@ -249,6 +250,8 @@
       </div>
       <div class="menu-bg-skyblue" id="menu-bg-skyblue"></div>
       <div class="skyblue-content">
+        <a href="./pricing.html" class="white-button">
+          <span>TRY IT NOW</span></a>
         <div class="left-side-skyblue">
           <img class="top-speaker" src="./img/speaker1.png">
           <img class="bottom-speaker" src="./img/speaker1.png">
@@ -264,8 +267,10 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
               </div>
-              <h2>ARTIST</h2>
-              <p>"Love it, it's the Best. I can't live without it!'</p>
+              <div class="skyblue-text">
+                <h2>ARTIST</h2>
+                <p>"Love it, it's the Best. I can't live without it!'</p>
+              </div>
             </section>
             <section class="review">
               <div class="stars">
@@ -275,8 +280,11 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
               </div>
-              <h2>PRODUCER</h2>
-              <p>"Love it, it's the Best. I can't live without it!'</p>
+              <div class="skyblue-text">
+
+                <h2>PRODUCER</h2>
+                <p>"Love it, it's the Best. I can't live without it!'</p>
+              </div>
             </section>
             <section class="review">
               <div class="stars">
@@ -286,9 +294,12 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
               </div>
-              <h2>MUSIC FAN</h2>
-              <p>"Love it, it's the Best. I can't live without it!'</p>
-            </section>
+              <div class="skyblue-text">
+
+                <h2>MUSIC FAN</h2>
+                <p>"Love it, it's the Best. I can't live without it!'</p>
+              </div>
+              </section>
           </section>
         </div>
       </div>
@@ -315,7 +326,7 @@
           <p>Purchase and download the app.</p>
         </div>
       
-          <a href="./pricing.html" class="btn-mix-noborder" data-text="TRY IT NOT"><span>TRY IT NOW</span></a>
+          <a href="./pricing.html" class="btn-mix-noborder" data-text="TRY IT NOW"><span>TRY IT NOW</span></a>
     </div>
     <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
@@ -337,6 +348,6 @@
       <p>support@experienceconcerts.co</p>
     </div>
     <h1>EXP|CON</h1>
-    <p>2019 @ All Rights Reserved | Speer Technologies Incorporated</p>
+    <p class="copyright">2019 @ All Rights Reserved | Speer Technologies Incorporated</p>
   </footer>
 </html>

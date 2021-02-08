@@ -8,26 +8,30 @@
     <link rel="stylesheet" href="./payments.css" />
     <link rel="stylesheet" href="./gradient-button.css" />
     <link rel="stylesheet" href="./menu-white.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
 
     <title>PAYMENT</title>
   </head>
   <body>
     <div class="payments-section">
-      <div id="menu-bar-white">
-        <h1><a class="nav-title-white" href="./index.html">EXP|CON</a></h1>
-        <div id="menu-white" onclick="onClickMenu('white')">
-          <div id="bar1-white" class="bar-white"></div>
-          <div id="bar2-white" class="bar-white"></div>
-          <div id="bar3-white" class="bar-white"></div>
+      <div class="menu-payments">
+
+        <div id="menu-bar-white" onclick="onClickMenu('white')">
+          <h1><a id="nav-title-white" class="nav-title-white" href="./index.html">EXP|CON</a></h1>
+          <div id="menu-white" >
+            <div id="bar1-white" class="bar-white"></div>
+            <div id="bar2-white" class="bar-white"></div>
+            <div id="bar3-white" class="bar-white"></div>
+          </div>
+          <ul class="nav-white" id="nav-white">
+            <li><a href="#">WHAT IS IT</a></li>
+            <li><a href="#">PERKS</a></li>
+            <li><a href="#">PRICING</a></li>
+          </ul>
         </div>
-        <ul class="nav-white" id="nav-white">
-          <li><a href="#">WHAT IS IT</a></li>
-          <li><a href="#">PERKS</a></li>
-          <li><a href="#">PRICING</a></li>
-        </ul>
+        <div class="menu-bg-white" id="menu-bg-white"></div>
       </div>
-      <div class="menu-bg-white" id="menu-bg-white"></div>
-      <form id="myform" onchange="checkform(this)">
+        <form id="myform" onchange="checkform(this)">
         <h1>PAYMENT</h1>
         <h2>1. Select your plan</h2>
         <div class="plan-selection">
@@ -154,19 +158,22 @@
         <!-- <div class="button-div"> -->
         <!-- </div> -->
       </form>
-      <button id="disabled" disabled>
-        <a href=""  class="disabled" data-text="Download"
+      <div class="buttons">
+
+        <button id="disabled" disabled>
+          <a href=""  class="disabled" data-text="Download"
           ><span>Download</span></a
-        >
-      </button>
-      <a
+          >
+        </button>
+        <a
         href=""
         id="on-pricing"
         class="btn-mix-noborder"
         data-text="Download"
         onclick="document.getElementById('myform').submit()"
         ><span>Download</span></a
-      >
+        >
+      </div>
     </div>
     <script src="./hamburgerMenu.js"></script>
     <script src="./payments.js"></script>
@@ -178,6 +185,6 @@
       <p>support@experienceconcerts.co</p>
     </div>
     <h1>EXP|CON</h1>
-    <p>2019 @ All Rights Reserved | Speer Technologies Incorporated</p>
+    <p class="copyright">2019 @ All Rights Reserved | Speer Technologies Incorporated</p>
   </footer>
 </html>

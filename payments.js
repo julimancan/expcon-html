@@ -5,14 +5,9 @@ window.onload = () => {
 };
 
 function checkform(form) {
-  // get all the inputs within the submitted form
   const inputs = form.getElementsByClassName('input-class');
 
-  // inputs.forEach(input => {
-    console.log(inputs[0].value.length)
-
     for (let input of inputs) {
-      console.log(input.value)
       if(input.hasAttribute("required")) {
         if (input.value.length > 0) {
           console.log("im here with a long value");
